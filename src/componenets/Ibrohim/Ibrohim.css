@@ -1,0 +1,116 @@
+
+ .sectoin6{
+    text-align: center;
+    margin: 130px;
+}
+.sectoin6 span{
+    background-color: #EBE5FA;
+    color: #560CE3;
+    width: 175px;
+height: 30px;
+border-radius: 6px;
+font-weight: 500;
+font-size: 16px;
+padding: 5px;
+}
+.sectoin6 h1{
+font-weight: 700;
+font-size: 36px;
+}
+.sectoin6 p{
+width: 435.32000732421875px;
+height: 46px;
+margin-left: 430px;
+font-weight: 400;
+font-size: 16px;
+}
+.Cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 12px; */
+    margin: 130px;
+    text-align: center;
+}
+.Card {
+  position: relative;
+  width: 392px;
+  height: 700px;
+}
+
+.Card span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  width: 149px;
+  height: 28px;
+
+  background-color: #560CE3;
+  color: #FFFFFF;
+
+  border-radius: 4px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 26px;
+  text-transform: capitalize;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Card h1{
+    text-align: center;
+    font-family: Outfit;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 24px;
+leading-trim: NONE;
+line-height: 30px;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+width: 283px;
+
+}
+.Card h1 {
+  transition: color 0.3s ease;
+}
+
+.Card:hover h1 {
+  color: #560CE3;
+  margin-left: 50px;
+}
+.Card img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.Card:hover img {
+  transform: scale(1.05);
+}
+.Card span {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Card:hover span {
+  background-color: #3f08b8;
+  transform: scale(1.05);
+}
+.Card {
+  position: relative;
+  width: 392px;
+  height: 414px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.Card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  padding-bottom: 50px;
+  border-radius: 20px ;
+}
