@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.section2 {
+  background-color: #f6f4fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 130px 155px;
+}
+
+.icon {
+  font-size: 60px;
+}
+.section2-middle {
+    transform: translate(-130px, 100px);
+}
