@@ -1,0 +1,132 @@
+.price-card {
+  background: linear-gradient(180deg, #ffffff, #f9f8ff);
+  padding: 32px;
+  border-radius: 22px;
+  width: 320px;
+  position: relative;
+  transition: all 0.4s ease;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Gradient border effect */
+.price-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, #6a4cff, #9f8cff);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* HOVER */
+.price-card:hover {
+  transform: translateY(-12px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(90, 60, 255, 0.25);
+}
+
+/* Title */
+.price-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+/* Description */
+.desc {
+  font-size: 14px;
+  color: #6b6b6b;
+  line-height: 1.6;
+}
+
+/* Price */
+.price {
+  font-size: 38px;
+  font-weight: 800;
+  margin: 24px 0;
+  color: #5b2eff;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #777;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #5b2eff, #8f79ff);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  margin-bottom: 22px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #4322ff, #725cff);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(91, 46, 255, 0.4);
+}
+
+/* Features */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  transition: transform 0.25s ease;
+}
+
+li:hover {
+  transform: translateX(6px);
+  color: #5b2eff;
+}
+
+/* Icon effect */
+li::before {
+  content: "✔";
+  color: #5b2eff;
+  font-weight: bold;
+}
+
+/* Shine animation */
+.price-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -75%;
+  width: 50%;
+  height: 200%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: rotate(25deg);
+  transition: left 0.8s ease;
+}
+
+.price-card:hover::after {
+  left: 130%;
+}
