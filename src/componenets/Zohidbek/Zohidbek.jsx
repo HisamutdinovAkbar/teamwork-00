@@ -14,24 +14,26 @@ function Zohidbek() {
         <div class="footer-container">
           <div class="footer-col logo-col">
             <div class="logo">
-              <img src={logo} alt="" />
+              <img className='logo' src={logo} alt="" />
             </div>
 
-            <p>
+            <p className='info'>
               It Is A Long Established Fact That A Reader Will Be Distracted By
               The Readable Content Of A Page When Looking At Its Layout The Point
               Of Using Lorem Varius Sit Amet Ipsum.
             </p>
 
             <div class="subscribe">
-              <input type="email" placeholder="Enter your mail" />
-              <button>
+              <input className='input' type="email" placeholder="Enter your mail" />
+              <button className='subscribeBtn'>
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
             </div>
 
             <div class="socials">
-              <a href="#"><FaFacebook /></a>
+              <a className='+746
+              
+              ' href="#"><FaFacebook /></a>
               <a href="#"><FaTwitter />
               </a>
               <a href="#"><FaInstagram />
