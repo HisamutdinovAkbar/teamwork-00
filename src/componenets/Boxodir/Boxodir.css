@@ -1,0 +1,260 @@
+:root {
+    --primary-purple: #6c29d9;
+}
+
+.header {
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.top-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.separator {
+    opacity: 0.5;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+/* Main Nav */
+.main-nav {
+    padding: 15px 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    background: var(--primary-purple);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.logo-text h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #1a1a1a;
+}
+
+.logo-text p {
+    font-size: 10px;
+    margin: 0;
+    color: #666;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    font-weight: 500;
+    color: #333;
+}
+
+.nav-links li {
+    cursor: pointer;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.call-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.phone-icon {
+    font-size: 20px;
+    color: #666;
+}
+
+.call-label {
+    font-size: 11px;
+    margin: 0;
+    color: #888;
+}
+
+.phone-number {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.login-btn {
+    background: var(--primary-purple);
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-burger span {
+    width: 25px;
+    height: 2px;
+    background: #333;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('./public/bg-img.png');
+    /* Golden Gate ko'prik rasmi */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.hero-content h2 {
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+/* Search Box Container */
+.search-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    max-width: 1100px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.search-inputs {
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+
+.input-group {
+    flex: 1;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 35px 12px 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background: #f8f9fa;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-icon {
+    position: absolute;
+    right: 12px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* Search Button */
+.search-btn {
+    background: #6c29d9;
+    /* Binafsha rang */
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.search-btn:hover {
+    background: #5a21b3;
+}
